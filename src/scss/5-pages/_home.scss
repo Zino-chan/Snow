@@ -1,0 +1,30 @@
+.home{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url('/src/images/home.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .home-text{
+        color: $white;
+
+        h1{
+            font-size: 4rem;
+            text-transform: capitalize;
+            font-family: $raleway-extra-bold;
+        }
+
+        p{
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        span{
+            font-family: $pacifico;
+            font-size: 5rem;
+            text-transform: capitalize;
+            color: rgb(255, 255, 255,.8);
+        }
+    }
+}

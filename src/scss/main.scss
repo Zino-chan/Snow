@@ -1,0 +1,17 @@
+@import '1-settings/colors';
+@import '1-settings/fonts';
+@import '1-settings/typography';
+
+@import '2-elements/base';
+@import '2-elements/page-transition';
+@import '2-elements/preloader';
+
+@import '3-tools/mixins';
+
+@import '4-components/header';
+@import '4-components/footer';
+
+@import '5-pages/home';
+@import '5-pages/about';
+@import '5-pages/work';
+@import '5-pages/blog';

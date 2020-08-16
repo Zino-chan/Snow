@@ -1,0 +1,14 @@
+#header{
+    .logo a{
+        font-family: $pacifico;
+        color: $white!important;
+    }
+
+    .nav-item{
+        margin: 0 1rem;
+        .nav-link{
+            font-size: 1.6rem;
+            color: rgb(255, 255, 255,.9);
+        }
+    }
+}
