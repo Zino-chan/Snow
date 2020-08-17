@@ -1,7 +1,14 @@
-body{
-    font-family: $baloo-tamma-regular;
+html{
+    scroll-behavior: smooth;
 }
 
+
+body{
+    font-family: $baloo-tamma-regular;
+    overflow-x: hidden;
+}
+
+main,section{overflow-x: hidden;}
 
 h1,
 h2,

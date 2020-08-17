@@ -1,4 +1,5 @@
 #header{
+    @include transition();
     .logo a{
         font-family: $pacifico;
         color: $white!important;
@@ -11,4 +12,6 @@
             color: rgb(255, 255, 255,.9);
         }
     }
+
+    &.scrolled{background-color: $black; @include transition();}
 }

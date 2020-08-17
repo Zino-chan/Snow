@@ -3,3 +3,7 @@
     background-size: $size!important;
     background-repeat: no-repeat!important;
 }
+
+@mixin  transition($prop: all, $time: .3s, $type: linear) {
+    transition: $prop $time $type;
+}
