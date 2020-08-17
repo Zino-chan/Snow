@@ -4,6 +4,7 @@
   "description": "Branding agency",
   "main": "index.js",
   "dependencies": {
+    "@splidejs/splide": "^2.4.11",
     "bootstrap": "^4.5.2",
     "gsap": "^3.4.2",
     "sal.js": "^0.7.7"

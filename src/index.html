@@ -6,17 +6,32 @@
     <title>Snow</title>
    
 </head>
-<body data-scroll-container>
-    <header class="header position-fixed w-100" id="header"></header>
+<body>
+    <header class="header position-fixed w-100" id="header" data-sal="slide-down" 
+    style="--sal-duration: 1.2s;"></header>
 
     <main>
         <section class="home vw-100 d-flex justify-content-center align-items-center" id="home">
             <div class="container-fluid">
                 <div class="home-content">
                     <div class="home-text text-center">
-                        <p>NEW BRANDING AGENCY</p>
-                        <h1 class="my-4">we are about to change the way</h1>
-                        <span class="dancing">you publish on web</span>
+                        <p
+                            class="my-4" 
+                            data-sal="slide-down" 
+                            style="--sal-duration: 1s; --sal-delay: 0.3s"
+                        >NEW BRANDING AGENCY</p>
+                        <h1 
+                            class="my-4" 
+                            data-sal="zoom-in" 
+                            style="--sal-duration: 1s;"
+                        >
+                            we are about to change the way
+                        </h1>
+                        <span 
+                            class="dancing"
+                            data-sal="slide-up" 
+                            style="--sal-duration: 1s; --sal-delay: 0.2s"
+                        >you publish on web</span>
                     </div>
                 </div>
             </div>
@@ -24,43 +39,65 @@
 
         <section class="about" id="about">
             <div class="title">
-                <h2>About our agency</h2>
-                <p>
+                <h2
+                    data-sal="slide-down" 
+                    style="--sal-duration: 1.2s;"
+                >About our agency</h2>
+                <p
+                    data-sal="slide-up" 
+                    style="--sal-duration: 1s; --sal-delay: 0.2s"
+                >
                     We are a new design studio based in USA. We have over 20 years of combined
                     experience, and know a thing or two about designing websites and mobile apps.
                     Clever use of technology and lean processes enable us to work faster and smarter.
                 </p>                
             </div>
-            <div class="about-img"></div>
+            <div 
+                class="about-img"
+                data-sal="zoom-in" 
+                style="--sal-duration: 1s; --sal-delay: 0.3s"
+            ></div>
             <div class="numbers">
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-xl-3 number-content">
-                            <div class="number-icon"></div>
+                            <div class="number-icon"  data-sal="zoom-in" style="--sal-duration: 1s;"></div>
                             <div class="number-info">
                                 <span>543</span>
-                                <h4>projects completed</h4>
+                                <h4 
+                                    data-sal="slide-up" 
+                                    style="--sal-duration: 1s; --sal-delay: 0.2s"
+                                >projects completed</h4>
                             </div>
                         </div>
                         <div class="col-xl-3 number-content">
-                            <div class="number-icon"></div>
+                            <div class="number-icon" data-sal="zoom-in" style="--sal-duration: 1s;"></div>
                             <div class="number-info">
                                 <span>1425</span>
-                                <h4>working hours</h4>
+                                <h4
+                                    data-sal="slide-up" 
+                                    style="--sal-duration: 1s; --sal-delay: 0.2s"
+                                >working hours</h4>
                             </div>
                         </div>
                         <div class="col-xl-3 number-content">
-                            <div class="number-icon"></div>
+                            <div class="number-icon" data-sal="zoom-in" style="--sal-duration: 1s;"></div>
                             <div class="number-info">
                                 <span>615</span>
-                                <h4>positive feedbacks</h4>
+                                <h4
+                                    data-sal="slide-up" 
+                                    style="--sal-duration: 1s; --sal-delay: 0.2s"
+                                >positive feedbacks</h4>
                             </div>
                         </div>
                         <div class="col-xl-3 number-content">
-                            <div class="number-icon"></div>
+                            <div class="number-icon" data-sal="zoom-in" style="--sal-duration: 1s;"></div>
                             <div class="number-info">
                                 <span>765</span>
-                                <h4>happy clients</h4>
+                                <h4
+                                    data-sal="slide-up" 
+                                    style="--sal-duration: 1s; --sal-delay: 0.2s"
+                                >happy clients</h4>
                             </div>
                         </div>
                     </div>
@@ -71,40 +108,78 @@
         <section class="work" id="work">
             <div class="container-fluid">
                 <div class="title">
-                    <h2>Best Projects</h2>
-                    <p>
+                    <h2
+                        data-sal="slide-down" 
+                        style="--sal-duration: 1.2s;"
+                    >Best Projects</h2>
+                    <p
+                        data-sal="slide-up" 
+                        style="--sal-duration: 1s; --sal-delay: 0.2s"
+                    >
                         Lorem ipsum, consectetur adipisicing elit dolor sit amet consectetur sectetur adipis adipisicing elit.
                     </p>
                 </div>
                 <div class="work-content">
-                    <div class="work-item work_01"></div>
-                    <div class="work-item work_02"></div>
-                    <div class="work-item work_03"></div>
-                    <div class="work-item work_04"></div>
-                    <div class="work-item work_05"></div>
-                    <div class="work-item work_06"></div>
-                    <div class="work-item work_07"></div>
-                    <div class="work-item work_08"></div>
-                    <div class="work-item work_09"></div>
+                    <div data-sal="slide-right" style="--sal-duration: 1.1s;"  class="work-item work_01"></div>
+                    <div data-sal="slide-down" style="--sal-duration: 1.1s; --sal-delay: 0.2s" class="work-item work_02"></div>
+                    <div data-sal="slide-left" style="--sal-duration: 1.1s; --sal-delay: 0.3s" class="work-item work_03"></div>
+                    <div data-sal="slide-up" style="--sal-duration: 1.1s; --sal-delay: 0.4s" class="work-item work_04"></div>
+                    <div data-sal="zoom-in" style="--sal-duration: 1.1s; --sal-delay: 0.5s" class="work-item work_05"></div>
+                    <div data-sal="slide-right" style="--sal-duration: 1.1s; --sal-delay: 0.6s" class="work-item work_06"></div>
+                    <div data-sal="slide-left" style="--sal-duration: 1.1s; --sal-delay: 0.6s" class="work-item work_07"></div>
+                    <div data-sal="slide-up" style="--sal-duration: 1.1s; --sal-delay: 0.7s" class="work-item work_08"></div>
+                    <div data-sal="slide-down" style="--sal-duration: 1.1s; --sal-delay: 0.8s" class="work-item work_09"></div>
                 </div>
             </div>
             <div class="feedback">
-                <div class="feedback-content">
-                    <p>
-                        "Outstanding job and exceed all expectations. it was pleasure
-                        to work with them on a sizable first project and am looking forward to start the next one asap."
-                    </p>
-                    <span>MICHEAL HOPKINS</span>
+                <div class="splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide feedback-content">
+                                <p
+                                    
+                                >
+                                    "Outstanding job and exceed all expectations. it was pleasure
+                                    to work with them on a sizable first project and am looking forward to start the next one asap."
+                                </p>
+                                <span
+                                    
+                                >MICHEAL HOPKINS</span>
+                            </div>
+                            <div class="splide__slide feedback-content">
+                                <p
+                                    
+                                >
+                                    "Outstanding job and exceed all expectations. it was pleasure
+                                    to work with them on a sizable first project and am looking forward to start the next one asap."
+                                </p>
+                                <span
+                                    
+                                >MICHEAL HOPKINS</span>
+                            </div>
+                            <div class="splide__slide feedback-content">
+                                <p
+                                    
+                                >
+                                    "Outstanding job and exceed all expectations. it was pleasure
+                                    to work with them on a sizable first project and am looking forward to start the next one asap."
+                                </p>
+                                <span
+                                    
+                                >MICHEAL HOPKINS</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="clients">
                 <div class="container-fluid">
                     <div class="clients-content">
-                        <div class="client_01"></div>
-                        <div class="client_02"></div>
-                        <div class="client_03"></div>
-                        <div class="client_04"></div>
-                        <div class="client_05"></div>
+                        <div data-sal="slide-down" style="--sal-duration: 1.1s;" class="client_01"></div>
+                        <div data-sal="slide-up" style="--sal-duration: 1.1s;" class="client_02"></div>
+                        <div data-sal="slide-down" style="--sal-duration: 1.1s;" class="client_03"></div>
+                        <div data-sal="slide-up" style="--sal-duration: 1.1s;" class="client_04"></div>
+                        <div data-sal="slide-down" style="--sal-duration: 1.1s;" class="client_05"></div>
                     </div>
                 </div>
             </div>
@@ -113,11 +188,21 @@
         <section class="blog" id="blog">
             <div class="container-fluid">
                 <div class="title">
-                    <h2>Latest Blog</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, magni consectetur adipisicing.</p>
+                    <h2
+                        data-sal="slide-down" 
+                        style="--sal-duration: 1.2s;"
+                    >Latest Blog</h2>
+                    <p
+                        data-sal="slide-up" 
+                        style="--sal-duration: 1.2s; --sal-delay: 0.2s;"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, magni consectetur adipisicing.</p>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div 
+                        class="col-xl-4"
+                        data-sal="slide-right" 
+                        style="--sal-duration: 1.2s;"    
+                    >
                         <div class="card">
                             <img src="images/blog/blog1.jpg" class="card-img-top" alt="blog">
                             <div class="card-body">
@@ -130,7 +215,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div 
+                        class="col-xl-4"
+                        data-sal="slide-up" 
+                        style="--sal-duration: 1.2s; --sal-delay: .2s;"
+                    >
                         <div class="card">
                             <img src="images/blog/blog2.jpg" class="card-img-top" alt="blog">
                             <div class="card-body">
@@ -143,7 +232,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div
+                        class="col-xl-4"
+                        data-sal="slide-left" 
+                        style="--sal-duration: 1.2s;"
+                    >
                         <div class="card">
                             <img src="images/blog/blog3.jpg" class="card-img-top" alt="blog">
                             <div class="card-body">
@@ -165,7 +258,11 @@
         <section class="contact" id="contact">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div 
+                        class="col-xl-6"
+                        data-sal="slide-right" 
+                        style="--sal-duration: 1.2s;"
+                    >
                         <div class="contact-info">
                             <h2>Contact Info</h2>
                             <p>
@@ -180,7 +277,11 @@
                             <h4>Fax: <span class="ml-2">+44 987 065 909</span></h4>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div 
+                        class="col-xl-6"
+                        data-sal="slide-left" 
+                        style="--sal-duration: 1.2s;"
+                    >
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-xl-6">

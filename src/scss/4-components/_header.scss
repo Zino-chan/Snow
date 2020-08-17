@@ -1,5 +1,6 @@
 #header{
     @include transition();
+    z-index: 999;
     .logo a{
         font-family: $pacifico;
         color: $white!important;

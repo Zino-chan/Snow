@@ -34,13 +34,13 @@
         text-align: center;
 
         .feedback-content{
-            width: 50%;
-            margin: 0 auto;
+            cursor: pointer;
             p{
                 font-size: 2rem;
                 color: $white;
                 font-family: $pacifico;
-                margin-bottom: 2rem;
+                width: 50%;
+                margin: 0 auto 2rem auto;
             }
 
             span{
