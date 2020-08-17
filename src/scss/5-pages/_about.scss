@@ -1,0 +1,55 @@
+.about{
+    padding: 10rem 0;
+    min-height: 100vh;
+
+    .about-img{
+        width: 230px;
+        height: 60px;
+        background: url('/src/images/signature.png');
+        @include bgImg();
+        margin: 3rem auto 5rem auto;
+    }
+
+    .numbers{
+        padding: 6rem 0;
+        @include bgImg();
+        background: url('/src/images/numbers.jpg');
+
+        .number-icon{
+            width: 50px;
+            height: 50px;
+            @include bgImg(contain);
+        }
+
+        .row .number-content{
+            display: flex;
+            align-items: center;
+            color: $white;
+
+            .number-info{
+                padding-left: 1.5rem;
+                span{font-size: 2rem;}
+                h4{text-transform: uppercase; font-size: 1.3rem;}
+            }
+            
+
+            &:nth-of-type(1){.number-icon{background-image: url('/src/images/icons/icon1.png');}}
+            &:nth-of-type(2){.number-icon{background-image: url('/src/images/icons/icon2.png');}}
+            &:nth-of-type(3){.number-icon{background-image: url('/src/images/icons/icon3.png');}}
+            &:nth-of-type(4){.number-icon{background-image: url('/src/images/icons/icon4.png');}}
+        }
+    }
+}
+
+.title{
+    text-align: center;
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    p{
+        width: 65%;
+        margin: 0 auto;
+    }
+}
