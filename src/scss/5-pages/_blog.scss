@@ -1,0 +1,36 @@
+#blog{
+    background-color: $bg;
+    padding: 10rem 0;
+    min-height: 100vh;
+    .card-img-top{
+        height: 288px;
+    }
+
+    .card-body{
+        padding-top: 2rem;
+        h5{font-size: 1.8rem;}
+        span{font-size: 1.5rem}
+        p{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.contact{
+    background-color: $bg;
+    padding: 10rem 0;
+    .contact-info{ 
+        h2, p, h4{margin-bottom: 2rem;}
+        span{color: $paragraph-color;}
+    }
+
+    form input::placeholder, textarea::placeholder{
+        font-size: 1.3rem;
+    }
+
+    .btn-dark{
+        border-radius: 0;
+        padding: .6rem 1.4rem;
+        font-size: 1.5rem;
+    }
+}
