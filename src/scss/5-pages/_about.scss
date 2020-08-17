@@ -24,6 +24,8 @@
             display: flex;
             align-items: center;
             color: $white;
+            margin-bottom: 2rem;
+            justify-content: center;
 
             .number-info{
                 padding-left: 1.5rem;
@@ -51,5 +53,16 @@
     p{
         width: 65%;
         margin: 0 auto;
+    }
+}
+
+@include responsive_max(450px){
+    p{font-size: 1.5rem!important;}
+    .title{
+        p{width: 100%!important; padding: 1rem!important;}
+    }
+
+    .about .row .number-content{
+        justify-content: flex-start!important;
     }
 }

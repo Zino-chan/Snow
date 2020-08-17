@@ -27,3 +27,16 @@
         }
     }
 }
+
+@include responsive_mobile(){
+    html{font-size: 13px;}
+}
+
+@include responsive_max(450px){
+    .home-text{
+        h1{font-size: 2rem!important;}
+        p{font-size: 1.5rem!important;}
+        span{font-size: 3rem!important;}
+    }
+}
+

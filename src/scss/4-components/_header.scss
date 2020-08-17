@@ -14,5 +14,65 @@
         }
     }
 
+    .nav-toggler{
+        width: 35px;
+        height: 30px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .toggler{
+            width: 35px;
+            height: 4px;
+            background-color: $white;
+            &::after,
+            &::before{
+                content: "";
+                width: 45px;
+                height: 4px;
+                background-color: $white;
+                position: absolute;
+                @include transition();
+            }
+
+            &::after{bottom: 0;}
+            &::before{top: 0;}
+        }
+
+        &.open{
+                .toggler{
+                transform: translateX(-45px);
+                background: transparent;
+                @include transition();
+
+                &:before{transform: rotate(45deg) translate(30px, -35px);  @include transition();}
+                &:after{transform: rotate(-45deg) translate(36px, 30px);  @include transition();}
+            }
+            }
+    }
+
     &.scrolled{background-color: $black; @include transition();}
+}
+
+
+@include responsive_mobile(){
+    .nav-toggler{display: flex!important;}
+
+    .navbar-nav{
+        background: $black;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        @include transition();
+
+        .nav-link{font-family: $baloo-tamma-bold;}
+
+        &.open{max-height: 300px; padding: 2rem; @include transition();}
+    }
+
+    .header{background: $black;}
 }

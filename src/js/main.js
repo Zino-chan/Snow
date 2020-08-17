@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         scrollY > 80 ? document.getElementById('header').classList.add('scrolled')
         : document.getElementById('header').classList.remove('scrolled');
+    });
+
+    document.querySelector('.nav-toggler').addEventListener('click', () => {
+        document.querySelector('.navbar-nav').classList.toggle('open');
+        document.querySelector('.nav-toggler').classList.toggle('open');
     })
 
     sal();
