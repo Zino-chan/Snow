@@ -1,12 +1,14 @@
 #work{
     min-height: 100vh;
-    padding: 5rem 0;
+    padding-top: 10rem;
+    background-color: $bg;
 
     .work-content{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(4, 260px);
         gap: 2rem;
+        margin-bottom: 6rem;
 
         .work-item{
             width: 100%;
@@ -22,6 +24,48 @@
             &.work_07{background: url('/src/images/work/work8.jpg'); grid-row: 2/4; grid-column: 3/4;}
             &.work_08{background: url('/src/images/work/work7.jpg');}
             &.work_09{background: url('/src/images/work/work9.jpg');}
+        }
+    }
+
+    .feedback{
+        @include bgImg();
+        background: url('/src/images/numbers.jpg');
+        padding: 8rem 0;
+        text-align: center;
+
+        .feedback-content{
+            width: 50%;
+            margin: 0 auto;
+            p{
+                font-size: 2rem;
+                color: $white;
+                font-family: $pacifico;
+                margin-bottom: 2rem;
+            }
+
+            span{
+                color: white;
+                font-family: $raleway-semi-bold;
+            }
+        }
+    }
+
+    .clients{
+        background-color: $white;
+        padding: 4rem 0;
+        .clients-content{
+            display: grid;
+            grid-template-columns: repeat(5,150px);
+            grid-template-rows: 150px;
+            justify-content: space-between;
+            gap: 2.5rem;
+            & div{@include bgImg(contain)}
+
+            .client_01{background: url('/src/images/client/client1.png');}
+            .client_02{background: url('/src/images/client/client2.png');}
+            .client_03{background: url('/src/images/client/client3.png');}
+            .client_04{background: url('/src/images/client/client4.png');}
+            .client_05{background: url('/src/images/client/client5.png');}
         }
     }
 }
