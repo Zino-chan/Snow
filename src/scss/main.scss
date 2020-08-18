@@ -2,11 +2,13 @@
 @import '1-settings/fonts';
 @import '1-settings/typography';
 
-@import '2-elements/base';
-@import '2-elements/splide';
-@import '2-elements/preloader';
+@import '2-tools/mixins';
 
-@import '3-tools/mixins';
+@import '3-elements/base';
+@import '3-elements/splide';
+@import '3-elements/preloader';
+@import '3-elements/mouse';
+
 
 @import '4-components/header';
 @import '4-components/footer';

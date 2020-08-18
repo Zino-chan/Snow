@@ -11,6 +11,24 @@
         .nav-link{
             font-size: 1.6rem;
             color: rgb(255, 255, 255,.9);
+            font-family: $baloo-tamma-bold;
+            display: inline-block;
+            position: relative;
+            padding: 1rem 0;
+            @include transition();
+            &::after{
+                content: "";
+                width: 0;
+                height: 2px;
+                position: absolute;
+                bottom: 1rem;
+                left: 50%;
+                transform: translateX(-50%);
+                @include transition;
+                background-color: $white;
+            }
+
+            &:hover:after{width: 90%; @include transition;}
         }
     }
 
@@ -33,7 +51,6 @@
                 height: 4px;
                 background-color: $white;
                 position: absolute;
-                @include transition();
             }
 
             &::after{bottom: 0;}
@@ -46,8 +63,8 @@
                 background: transparent;
                 @include transition();
 
-                &:before{transform: rotate(45deg) translate(30px, -35px);  @include transition();}
-                &:after{transform: rotate(-45deg) translate(36px, 30px);  @include transition();}
+                &:before{transform: translateX(45px) rotate(-135deg);;  @include transition();}
+                &:after{transform: translateX(45px) rotate(135deg);;  @include transition();}
             }
             }
     }

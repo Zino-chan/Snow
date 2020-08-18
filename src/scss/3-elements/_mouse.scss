@@ -1,0 +1,49 @@
+.mouse{
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .arrow{
+        position: relative;
+        width: 15px;
+        height: 15px;
+        animation: scroll 1s linear infinite;
+       
+        &::before{
+            content: "";
+            position: absolute;
+            top: -7px;
+            width: 15px;
+            height: 15px;
+            border: 2px solid #fff;
+            border-right-color: transparent;
+            border-top-color: transparent;
+            transform: rotate(-45deg);
+        }
+        
+        
+        
+    }
+}
+
+
+@keyframes scroll{
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
