@@ -16,37 +16,6 @@ module.exports = merge(common, {
             template: './src/index.html',
             filename: 'index.html',
         }),
-        // new HtmlWebpackPlugin({
-        //     title: 'Snow',
-        //     favicon:  './public/favicon.png',
-        //     template: './src/about.html',
-        //     filename: 'about.html',
-        // }),
-        // new HtmlWebpackPlugin({
-        //     title: 'Snow',
-        //     favicon:  './public/favicon.png',
-        //     template: './src/reservation.html',
-        //     filename: 'reservation.html',
-        // }),
-        // new HtmlWebpackPlugin({
-        //     title: 'Snow',
-        //     favicon:  './public/favicon.png',
-        //     template: './src/services.html',
-        //     filename: 'services.html',
-        // }),
-        // new HtmlWebpackPlugin({
-        //     title: 'Snow',
-        //     favicon:  './public/favicon.png',
-        //     template: './src/menu.html',
-        //     filename: 'menu.html',
-        // }),
-        // new HtmlWebpackPlugin({
-        //     title: 'Snow',
-        //     favicon:  './public/favicon.png',
-        //     template: './src/contact.html',
-        //     filename: 'contact.html',
-        // })
-
     ],
     module: {
         rules: [

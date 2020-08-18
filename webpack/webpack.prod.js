@@ -28,61 +28,6 @@ module.exports = merge(common, {
           removeComments: true
         }
       }),
-      // new HtmlWebpackPlugin({
-      //   title: 'Snow',
-      //   favicon:  './public/favicon.png',
-      //   template: "./src/about.html",
-      //   filename: '../about.html',
-      //   minify: {
-      //     removeAttributeQuotes: true,
-      //     collapseWhitespace: true,
-      //     removeComments: true
-      //   }
-      // }),
-      // new HtmlWebpackPlugin({
-      //   title: 'Snow',
-      //   favicon:  './public/favicon.png',
-      //   template: "./src/reservation.html",
-      //   filename: '../reservation.html',
-      //   minify: {
-      //     removeAttributeQuotes: true,
-      //     collapseWhitespace: true,
-      //     removeComments: true
-      //   }
-      // }),
-      // new HtmlWebpackPlugin({
-      //   title: 'Snow',
-      //   favicon:  './public/favicon.png',
-      //   template: "./src/services.html",
-      //   filename: '../services.html',
-      //   minify: {
-      //     removeAttributeQuotes: true,
-      //     collapseWhitespace: true,
-      //     removeComments: true
-      //   }
-      // }),
-      // new HtmlWebpackPlugin({
-      //   title: 'Snow',
-      //   favicon:  './public/favicon.png',
-      //   template: "./src/menu.html",
-      //   filename: '../menu.html',
-      //   minify: {
-      //     removeAttributeQuotes: true,
-      //     collapseWhitespace: true,
-      //     removeComments: true
-      //   }
-      // }),
-      // new HtmlWebpackPlugin({
-      //   title: 'Snow',
-      //   favicon:  './public/favicon.png',
-      //   template: "./src/contact.html",
-      //   filename: '../contact.html',
-      //   minify: {
-      //     removeAttributeQuotes: true,
-      //     collapseWhitespace: true,
-      //     removeComments: true
-      //   }
-      // })
     ]
   },
   plugins: [
