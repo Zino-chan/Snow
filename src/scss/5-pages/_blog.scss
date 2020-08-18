@@ -3,6 +3,7 @@
     padding: 10rem 0;
     .card-img-top{
         height: 288px;
+        @include bgImg();
     }
 
     .card-body{
@@ -23,7 +24,13 @@
             @include transition();
             transform: scale(1.01);
         }
+
+        
     }
+
+    .col-lg-4:nth-of-type(1){.card-img-top{background: url('/src/images/blog/blog1.jpg');}}
+    .col-lg-4:nth-of-type(2){.card-img-top{background: url('/src/images/blog/blog2.jpg');}}
+    .col-lg-4:nth-of-type(3){.card-img-top{background: url('/src/images/blog/blog3.jpg');}}
 }
 
 .contact{

@@ -5,9 +5,11 @@ import sal from 'sal.js';
 import Splide from '@splidejs/splide';
 
 const selector = (element) => document.querySelector(element);
+const selectorAll = (element) => document.querySelectorAll(element);
 
 document.getElementById('header').innerHTML = header;
 document.getElementById('footer').innerHTML = footer;
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -21,6 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
     selector('.nav-toggler').addEventListener('click', () => {
         selector('.navbar-nav').classList.toggle('open');
         selector('.nav-toggler').classList.toggle('open');
+    })
+
+    selectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            selector('.navbar-nav').classList.remove('open');
+            selector('.nav-toggler').classList.remove('open');
+        })
     })
 
     sal();
